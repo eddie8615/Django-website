@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
+        'USER': 'admin',
         'NAME': 'mysite',
-        'PASSWORD': 'navior11',
-        'HOST': 'localhost',
+        'PASSWORD': 'navior11!',
+        'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': 'blog/config/mysql.cnf',
