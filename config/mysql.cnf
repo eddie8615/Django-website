@@ -1,0 +1,6 @@
+
+'HOST': 'localhost',
+'POST': '3306',
+'USER': 'root',
+'PASSWORD': 'navior11',
+'NAME': 'mysite',
