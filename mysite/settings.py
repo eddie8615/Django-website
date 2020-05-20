@@ -25,7 +25,7 @@ SECRET_KEY = '0d%6^6y7i5=w9*!0yf#-_a*d6cf6_yrm(w%!6%-_u8swy50o4@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eddie8615.pythonanywhere.com']
+ALLOWED_HOSTS = ['eddie8615.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['DevFolio'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,10 +77,16 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'admin',
-        'NAME': 'mysite',
-        'PASSWORD': 'navior11!',
-        'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
+        # 'USER': 'admin',
+        # 'NAME': 'mysite',
+        # 'PASSWORD': 'navior11!',
+        # 'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
+        # 'PORT': '3306',
+#         cannot figure out connecting to aws db instance from pythonanywhere
+        'USER': 'eddie8615',
+        'NAME': 'eddie8615$mysite',
+        'PASSWORD': 'navior11',
+        'HOST': 'eddie8615.mysql.pythonanywhere-services.com',
         'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': 'blog/config/mysql.cnf',
@@ -126,3 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS=(
+    os.path.join(BASE_DIR, 'DevFolio/'),
+)
