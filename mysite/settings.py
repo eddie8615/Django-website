@@ -55,7 +55,8 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['DevFolio'],
+        #When uploading this project, make sure that DIRS should be 'Django-website/DevFolio'
+        'DIRS': ['blog/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,6 +134,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=(
-    os.path.join(BASE_DIR, 'DevFolio/'),
-)
+# STATICFILES_DIRS=(
+#     os.path.join(BASE_DIR, 'DevFolio/'),
+# )
