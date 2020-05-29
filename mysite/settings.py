@@ -78,17 +78,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'USER': 'admin',
-        # 'NAME': 'mysite',
-        # 'PASSWORD': 'navior11!',
-        # 'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
-        # 'PORT': '3306',
-#         cannot figure out connecting to aws db instance from pythonanywhere
-        'USER': 'eddie8615',
-        'NAME': 'eddie8615$mysite',
-        'PASSWORD': 'navior11',
-        'HOST': 'eddie8615.mysql.pythonanywhere-services.com',
+        'USER': 'admin',
+        'NAME': 'mysite',
+        'PASSWORD': 'navior11!',
+        'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306',
+#         cannot figure out connecting to aws db instance from pythonanywhere
+#         'USER': 'eddie8615',
+#         'NAME': 'eddie8615$mysite',
+#         'PASSWORD': 'navior11',
+#         'HOST': 'eddie8615.mysql.pythonanywhere-services.com',
+#         'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': 'blog/config/mysql.cnf',
         # }
