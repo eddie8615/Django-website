@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #When uploading this project, make sure that DIRS should be 'Django-website/DevFolio'
-        'DIRS': ['blog/template'],
+        'DIRS': ['blog/template', 'dashboard/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,17 +79,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'USER': 'admin',
-        # 'NAME': 'mysite',
-        # 'PASSWORD': 'navior11!',
-        # 'HOST': 'django-database.cr54xp4ziokp.ap-northeast-2.rds.amazonaws.com',
-        # 'PORT': '3306',
-#         cannot figure out connecting to aws db instance from pythonanywhere
-        'USER': 'eddie8615',
-        'NAME': 'eddie8615$mysite',
+        'USER': 'root',
+        'NAME': 'mysite',
         'PASSWORD': 'navior11',
-        'HOST': 'eddie8615.mysql.pythonanywhere-services.com',
+        'HOST': 'localhost',
         'PORT': '3306',
+#         cannot figure out connecting to aws db instance from pythonanywhere
+#         'USER': 'eddie8615',
+#         'NAME': 'eddie8615$mysite',
+#         'PASSWORD': 'navior11',
+#         'HOST': 'eddie8615.mysql.pythonanywhere-services.com',
+#         'PORT': '3306',
         # 'OPTIONS': {
         #     'read_default_file': 'blog/config/mysql.cnf',
         # }

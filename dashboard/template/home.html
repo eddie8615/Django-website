@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <meta charset="UTF-8">
+    <title>Changhyun's homepage</title>
+</head>
+<body>
+    <div class="page_header">
+        <div class="photo">
+
+        </div>
+        <header class="root_header">
+            <div class="header-btn">
+                <h2>Home</h2>
+                <a href="{% url 'post_list' %}">
+                    <h2>Blog</h2>
+                </a>
+                <h2>Internship report</h2>
+            </div>
+        </header>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div id="name">
+                Changhyun Kim
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="email">
+                Email: movementfor@gmail.com
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="brief">
+                Studies Computer Science
+            </div>
+            <div class="brief">
+                <a href="https://www.cs.bham.ac.uk/">University of Birmingham</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <hr style="height:5px; background-color:grey;border-width:0;margin:0px;">
+
+    <div class="cv-container">
+        <div class="cv-contents">
+            <div class="edu">
+                Univerisof birmh
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -22,8 +22,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
+    url('', include('dashboard.urls')),
     url(r'^accounts/login/$', auth_views.LoginView.as_view(), name='login'),
-    url(r'^accounts/logout/$', auth_views.LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
-    url('', include('blog.urls')),
+    url(r'^accounts/logout/$', auth_views.LogoutView.as_view(), name='logout', kwargs={'next_page': '/blog'}),
+    url('blog/', include('blog.urls')),
 
 ]
