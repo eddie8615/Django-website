@@ -73,7 +73,7 @@ nav {
 }
 
 .keybinding__detail:first-child {
-  text-align: right;
+  text-align: left;
   padding-right: 1rem;
 }
 
@@ -84,7 +84,7 @@ nav {
 
 .keybinding__detail:first-child .keybinding__title {
   position: absolute;
-  right: 0.5rem;
+  left: 0.5rem;
   top: -2rem;
   background-color: white;
   padding: 0 0.5rem;
